@@ -7,3 +7,4 @@ msg = "Hello again"
 print(msg)
 
 #%%
+print("a test")
