@@ -6,10 +6,35 @@
 # Python 101 https://news.ycombinator.com/item?id=15932381
 # books: learning python, python crash course, python tricks, introducing python, effective python
 
+# primitive data types, boolean, integer, float, string
+# in python, everything is implemented as an object
+# the object has a type (class)
+# type determine if an object can be changed (mutable) or is constant (immutable)
+# python is strongly typed, meaning object type does not change
+# type(thing) to get the type of a variable or a literal value
+# variable, a name refer object, a reference
+# variable name, letter, digit, underscore, can't start with a digit
+
+# integer
 #%%
-# primitive data types
-msg = "Hello World"
-print(msg)
+print(9 / 5)
+print(9 // 5)
+print(9 % 5)
+print(divmod(9, 5))
+
+a = 5
+a /= 3
+print(a)
 
 #%%
-# collection data types
+# bases
+print(0b1) # binary
+print(0o7) # octal
+print(0xf) # hex
+
+#%%
+# type conversion
+
+
+# sequence data types
+#%%
