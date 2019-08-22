@@ -18,6 +18,7 @@
 # integer
 #%%
 print(9 / 5)
+print(9 / 3)
 print(9 // 5)
 print(9 % 5)
 print(divmod(9, 5))
@@ -26,15 +27,35 @@ a = 5
 a /= 3
 print(a)
 
+# python3 can handle any length integer
+googol = 10**100
+print(googol)
+print(googol * googol)
 #%%
 # bases
 print(0b1) # binary
 print(0o7) # octal
 print(0xf) # hex
-
+print(0x1f % 16)
 #%%
 # type conversion
+# int() function
+print(int(98.7))
+print(int(True))
+print(int(False))
+print(int('-12'))
+# print(int('98.7')) # will generate exception
+print(1+2.0) # auto type conversion
 
+#%% float
+# float() function
+print(float(True))
+print(float(False))
+print(float(123))
+print(float('-12.34'))
 
+#%% string
+
+#%%
 # sequence data types
 #%%
