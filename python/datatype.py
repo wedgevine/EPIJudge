@@ -22,6 +22,8 @@
 # variable, a name refer object, a reference
 # variable name, letter, digit, underscore, can't start with a digit
 
+###############################################################################
+
 #%% integer
 print(9 / 5)
 print(9 / 3)
@@ -78,6 +80,8 @@ a = 1
 print(a is None)
 b = None
 print(b is not None)
+
+###############################################################################
 
 #%% 
 # string
@@ -182,6 +186,8 @@ setup = 'a duck goes into a bar...'
 setup.replace('duck', 'marmoset')
 setup.replace('a ', 'the ', 100)
 
+###############################################################################
+
 #%% sequence
 # sequence of items, list, tuple, string, all are ordered set
 # item/element of list/tuple/string are ordered in sequence
@@ -225,14 +231,20 @@ print(str(1), str(True), str(1.0e4))
 l = [1, 2, 3]
 l[0] = 100
 print(l)
+del l[1]
+print(l)
 t = (1, 2, 3)
 # the following generate error
 # TypeError: 'tuple' object does not support item assignment
 # t[0] = 100
+# error "TypeError: 'tuple' object doesn't support item deletion"
+# del t[2]    
 s = "this is a string"
 # this following generates error
 # TypeError: 'str' object does not support item assignment
 # s[1] = "x"
+# error "TypeError: 'str' object doesn't support item deletion"
+# del s[1]
 
 #%% concatenation and repeatation
 weekday = ['Monday', 'Tuesday', 'Wendsday', 'Thursday', 'Friday']
@@ -308,4 +320,64 @@ print(words.index('deer'), x.index(3), letters.index('x'))
 # counting the number of occurrences of x in a sequence: seq.count(x)
 print(words.count('a'), x.count(3), letters.count('x'))
 
-#%%
+#%% list functions
+words = ['a', 'deer', 'a', 'female', 'deer']
+# append object to end
+words.append("123")
+print(words)
+# extend list by ppending elements from he iterable
+words.extend(['1', '2', '3'])
+print(words)
+# or +=
+words += ['hello', 'world']
+print(words)
+# insert object before index
+words.insert(3, 'inserted string')
+print(words)
+# remove first occurrence of value
+words.remove("1")
+print(words)
+# error "ValueError: list.remove(x): x not in list"
+# words.remove("100")
+# remove and return item at index (default last)    
+word3 = words.pop(3)
+word0 = words.pop(0)
+word_last = words.pop()
+print(word3, word0, word_last)
+# append(), pop(): LIFO queue, stack
+# append(), pop(0): FIFO queue
+# stable sort "in place"
+numbers = [1, 9, 47, 2]
+numbers.sort()
+print(numbers)
+# reverse "in place"
+numbers.reverse()
+print(numbers)
+# function sorted return a sorted copy of the list
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
+# to sort descending
+sorted_numbers.sort(reverse=True)
+print(sorted_numbers)
+# to get a fresh list from an existing list
+a = [1, 2, 3]
+b = a.copy()
+c = list(a)
+d = a[:]
+print(a, b, c, d)
+
+###############################################################################
+
+#%% iterable
+# python iterable
+# https://stackoverflow.com/questions/9884132/what-exactly-are-iterator-iterable-and-iteration
+
+#%% iterable packing and unpacking
+# https://treyhunner.com/2018/03/tuple-unpacking-improves-python-code-readability/
+# http://openbookproject.net/thinkcs/python/english3e/tuples.html
+# https://stackoverflow.com/questions/2238355/what-is-the-pythonic-way-to-unpack-tuples
+# https://wsvincent.com/python-tuple-unpacking/
+# https://chrisalbon.com/python/basics/unpacking_a_tuple/
+
+
+
