@@ -13,6 +13,15 @@
 # books: learning python, python crash course, python tricks, 
 #        introducing python, effective python
 
+# book "introducing python" chapter 2 and chapter 3
+# introduced basic types and container types
+# book "learning python" 
+# chapter 3 introduced module
+# chapter 4 has a brief introduction to core data types
+# python doc - built in types
+# https://docs.python.org/dev/library/stdtypes.html#built-in-types
+
+
 # primitive data types, boolean, integer, float, string
 # in python, everything is implemented as an object
 # the object has a type (class)
@@ -368,9 +377,141 @@ print(a, b, c, d)
 
 ###############################################################################
 
-#%% iterable
-# python iterable
-# https://stackoverflow.com/questions/9884132/what-exactly-are-iterator-iterable-and-iteration
+#%% dictionary
+# dictionary and set, like sequence, are collection of objects
+# unlike sequence, the order of objects doesn't matter
+# objects in dictionary are not selected by positiion/index/offset
+# they are selected by keys, key could be any immutable type:
+# string, integer, float, tuple, boolean, ...
+# dictionary is mutable
+
+empty_dict = {}
+menu = {
+    "food": "apple",
+    "count": 1,
+    "color": "red",
+    # in python, it is okay to leave a comma after the last item in list, 
+    # tuple and dictionary
+}
+print(empty_dict)
+print(menu)
+
+# dict() to convert 2 value sequence into dictionary
+lol = [[1, 2], [3, 4], [5, 6]]
+print(dict(lol))
+# could be any 2 item sequence
+lot = [('a', 'b'), ('c', 'd'), ('e', 'f')]
+print(dict(lot))
+tos = ('a1', 'b2', 'c3')
+print(dict(tos))
+
+#%% add or change value by [key]
+menu = {
+    "breakfast": "bread",
+    "lunch": "apple",
+}
+menu["dinner"] = "meat"
+print(menu)
+
+# combine dictionaries with update
+snak = { "snak": "cookie" }
+menu.update(snak)
+print(menu)
+
+# delete item by key with del
+del menu["lunch"]
+print(menu)
+
+# delete all items by using clear
+menu.clear()
+print(menu)
+
+# like sequence, test for a key by using in
+d = { "a": 1, "x": 0 }
+print("a" in d, "x" not in d) 
+
+# get an item by [key]
+print(d["a"])
+# print(d["b"]) with KeyError: 'b'
+# to avoid this, either check with in or use get
+print(d.get("a", "000"), d.get("b", 123))
+
+# get all keys with keys()
+print(d.keys()) # returns dict_keys, an iterable
+# get all values with values()
+print(d.values()) 
+# get all key-value pair with items()
+print(d.items())    
+# assign with =, copy with copy()
+e = d.copy()
+d["a"] = 100
+print(e, d)
+
+###############################################################################
+
+#%% set
+# like a dictionary, only with unique keys, no associated value for the keys
+# use a set if only want to know something exists
+# use a dictionary if want to attach some information to the key as a value
+# like dictionary, sets are unordered
+
+empty_set = set()
+even_numbers = {0, 2, 4, 6, 8}
+odd_numbers = {1, 3, 5, 7}  
+
+# convert from other data types with set()
+# from sequence, dictionary
+print(set("letters"))       # note, duplicated elements are removed
+print(set([1, 2, 3, 4, 5])) # from a list
+print(set({"a":1, "b":2}))  # from dictionary, only the keys
+
+# test with in
+print(2 in odd_numbers)
+
+# set operations
+print(even_numbers & odd_numbers)   # intersection
+print(even_numbers | odd_numbers)   # union
+print(even_numbers - odd_numbers)   # difference, ele in first, not in second
+print(even_numbers.difference(odd_numbers)) # same as above
+print(even_numbers ^ odd_numbers)   # exclusive, element in first or second
+                                    # but not in both
+print(even_numbers <= odd_numbers)  # check if first is subset of second
+print(even_numbers.issubset(odd_numbers))   
+print(even_numbers <= even_numbers)
+print(even_numbers < even_numbers)  # < to check proper subset
+# correspondingly, >=, >, issuperset for superset
+
+###############################################################################
+
+# basic types, sequence types, dictionary, set can be nested to make bigger
+# data structures
+
+# sequence (list, tuple, string), dictionary, set, all these types are
+# some collection of objects, container types, they have some commons
+# 1. they need to be created, either with class or some literal
+# 2. they can be converted from other types
+# 3. they are either mutable or immutable, for mutable types, item can be
+#    inserted, updated, deleted
+# 4. they provide some way to get the item, index for sequence and key for dic
+# 5. they provide some way to test if an item is in the collection
+# 6. they provide some way to get part of the collection, like slice, all keys
+# 7. they provide some common method to process items in the collection,
+#    like, len(), sum(), max(), min()
+# 8. they provide type specific methods, like string.upper(), list.sort()
+#    and set operations
+# 9. they have different internal implementation, application for different
+#    cases: queue, stack, hash, set, ...
+
+# most imporatntly, these container types are iterable objects, meaning
+# they can return a iterator object, which has a next() function 
+# iteration tools such as loop (for, while), map, filter function, 
+# list comprehension can call the next() function to get item of the
+# container one by one until a StopIteration exception was raised
+
+# a good article https://nvie.com/posts/iterators-vs-generators/
+# and followed https://nvie.com/posts/use-more-iterators/
+
+###############################################################################
 
 #%% iterable packing and unpacking
 # https://treyhunner.com/2018/03/tuple-unpacking-improves-python-code-readability/
@@ -378,6 +519,4 @@ print(a, b, c, d)
 # https://stackoverflow.com/questions/2238355/what-is-the-pythonic-way-to-unpack-tuples
 # https://wsvincent.com/python-tuple-unpacking/
 # https://chrisalbon.com/python/basics/unpacking_a_tuple/
-
-
 
