@@ -53,66 +53,78 @@ print(bin(x | (x+1)))
 # note -x = ~x + 1
 x = 0b00000000000000000000000001100000
 print(bin(x & (-x)))
-# some other tricks
-# https://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit?rq=1
-
+# right propagate the rightmost set bit
+x = 0b01010000
+print(bin(x ^ (x-1) | x))
+# computer x modulo a power of 2
+x = 77
+print(77 ^ 0b01000000)
+# test x is power of 2
+x = 64
+print((x != 0) and (x & (x-1) == 0))
 # ref 
 # http://graphics.stanford.edu/~seander/bithacks.html
 # https://wiki.python.org/moin/BitManipulation
+# https://stackoverflow.com/questions/tagged/bit-manipulation
+# https://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit?rq=1
+# just search "bit hacks", "bit manipulations"
 
 
 #%%
 from test_framework import generic_test
 
-# base_parity = [
-#     0, 
-#     1,
-#     1,
-#     0,
-#     1,
-#     0,
-#     0,
-#     1,
-#     1,
-#     0,
-#     0,
-#     1,
-#     0,
-#     1,
-#     1,
-#     0,
-# ]
-
-# def parity(x):
-#     parity_value = 0
-
-#     # while x > 0:
-#     #     parity_value = parity_value ^ (x % 2)
-#     #     x >>= 1
-
-#     while x > 0:
-#         parity_value ^= base_parity[x & 0b1111]
-#         x >>= 4
-
-#     return parity_value
-
-def get_parity(x):
+def get_base_parity(x):
     result = 0
     while x > 0:
         result ^= x & 1
         x >>= 1
     return result
     
-base_parity = [get_parity(k) for k in range(1 << 8)]
+base4_parity = [get_base_parity(k) for k in range(1 << 4)]
+base8_parity = [get_base_parity(k) for k in range(1 << 8)]
+base16_parity = [get_base_parity(k) for k in range(1 << 16)]
+
+def get_base4_parity(x):
+    result = 0
+    while x:
+        result ^= base4_parity[x & 0xF]
+        x >>= 4
+    return result
+
+def get_base8_parity(x):
+    result = 0
+    while x:
+        result ^= base8_parity[x & 0xFF]
+        x >>= 8
+    return result
+
+def get_base16_parity(x):
+    result = 0
+    while x:
+        result ^= base16_parity[x & 0xFFFF]
+        x >>= 16
+    return result
+
+def get_parity_lsb(x):
+    result = 0
+    while x:
+        result ^= 1
+        x &= x - 1
+    return result
+
+def get_parity_association(x):
+    # suppose x is represented 64 bit binary
+    x ^= x >> 32
+    x ^= x >> 16
+    return base16_parity[x & 0xFFFF]
 
 def parity(x):
-    result = 0
-
-    while x > 0:
-        result ^= base_parity[x & 0xFF]
-        x >>= 8
-
-    return result
+    return get_base16_parity(x)          # 6us, 4us, 3us
+    # return get_parity_lsb(x)              # 6us
+    # return get_parity_association(x)      # 2us
 
 if __name__ == '__main__':
     exit(generic_test.generic_test_main("parity.py", 'parity.tsv', parity))
+
+
+#%%
