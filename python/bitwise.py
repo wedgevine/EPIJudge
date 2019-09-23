@@ -64,3 +64,17 @@ print((x != 0) and (x & (x-1) == 0))
 # https://stackoverflow.com/questions/tagged/bit-manipulation
 # https://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit?rq=1
 # just search "bit hacks", "bit manipulations"
+
+#%% bitwise application
+
+# ref
+# http://h14s.p5r.org/2012/09/0x5f3759df.html
+# https://www.quora.com/What-are-some-cool-bit-manipulation-tricks-hacks
+# https://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture19.pdf
+# https://blog.logrocket.com/interesting-use-cases-for-javascript-bitwise-operators/
+# What are the applications of bitwise operators, right shift and left shift?
+# https://www.quora.com/What-is-the-use-or-benefit-of-bitwise-operators
+# https://chess24.com/en/read/news/how-do-chess-engines-think
+# bitsets to represent a chess board.
+# https://www.reddit.com/r/learnprogramming/comments/8y7vdr/practical_uses_of_bitwise_operators/
+# bitwise applications
