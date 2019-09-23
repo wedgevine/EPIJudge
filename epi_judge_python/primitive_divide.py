@@ -13,11 +13,19 @@ def second(x, y):
     result = 0
 
     while x >= y:
-        
+        running_y = y
+        order = 0
+        while x >= running_y:
+            x -= running_y
+            result += (1 << order)
+            running_y <<= 1
+            order += 1
+    
     return result
 
 def divide(x, y):
     return bf(x, y)
+    # return second(x, y)
 
 
 if __name__ == '__main__':
