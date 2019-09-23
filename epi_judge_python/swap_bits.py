@@ -1,7 +1,6 @@
 from test_framework import generic_test
 
-
-def swap_bits(x, i, j):
+def first_try(x, i, j):
     vi = (x >> i) & 1
     vj = (x >> j) & 1
     mask = pow(2, 64) - 1
@@ -19,6 +18,19 @@ def swap_bits(x, i, j):
         x = (x | to_or) & to_and
 
     return x
+
+def second_try(x, i, j):
+    vi = (x >> i) & 1
+    vj = (x >> j) & 1
+
+    if (vi != vj):
+        x ^= (1 << j) | (1 << i)
+
+    return x
+
+def swap_bits(x, i, j):
+    # return first_try(x, i, j)
+    return second_try(x, i, j)
 
 if __name__ == '__main__':
     exit(

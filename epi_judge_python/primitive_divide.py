@@ -1,9 +1,23 @@
 from test_framework import generic_test
 
+def bf(x, y):
+    result = 0
+
+    while x >= y:
+        result += 1
+        x -= y
+    
+    return result
+
+def second(x, y):
+    result = 0
+
+    while x >= y:
+        
+    return result
 
 def divide(x, y):
-    # TODO - you fill in here.
-    return 0
+    return bf(x, y)
 
 
 if __name__ == '__main__':
