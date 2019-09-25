@@ -23,9 +23,27 @@ def second(x, y):
     
     return result
 
+def third(x, y):
+    result = 0
+    order = 0
+
+    while x >= y:
+        y <<= 1
+        order += 1
+
+    while order >= 0:
+        if x >= y:
+            result += (1 << order)
+            x -= y
+        y >>= 1
+        order -= 1
+
+    return result
+
 def divide(x, y):
-    return bf(x, y)
+    # return bf(x, y)
     # return second(x, y)
+    return third(x, y)
 
 
 if __name__ == '__main__':
