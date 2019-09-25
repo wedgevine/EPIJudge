@@ -78,3 +78,14 @@ print((x != 0) and (x & (x-1) == 0))
 # bitsets to represent a chess board.
 # https://www.reddit.com/r/learnprogramming/comments/8y7vdr/practical_uses_of_bitwise_operators/
 # bitwise applications
+
+#%% EPI chapter 4 summary
+# many algos utilize a fact that any non-negative number can be represented
+# by a series of power of 2, given this fact, also any non-negative number
+# was represented internally as binary format, left shift << 1 equals multiple
+# 2, right shift >> 1 equals floor divide by 2 and these bitwise ops are fast
+
+# ref
+# http://mathhelpforum.com/number-theory/123347-every-natural-number-sum-powers-2-a.html
+# https://mathlesstraveled.com/2008/04/18/challenge-12-sums-of-powers-of-two/
+# https://en.wikipedia.org/wiki/1_%2B_2_%2B_4_%2B_8_%2B_%E2%8B%AF
