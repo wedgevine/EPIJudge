@@ -85,6 +85,30 @@ print((x != 0) and (x & (x-1) == 0))
 # was represented internally as binary format, left shift << 1 equals multiple
 # 2, right shift >> 1 equals floor divide by 2 and these bitwise ops are fast
 
+# for any alogs, always try brute force algo first, get answer, then improve
+
+# parity, divide and conquer, lookup table
+# swap bit: know bitwise operation tricks, hacks, applications
+# reverse bit: divide and conquer and lookup table
+# closest int with same weight: prove the math assumption, using bit hacks to
+#                               swap 2 bits
+# primitive divide: bf is stepping by 1, then tried stepping by power of 2
+#                   book solution is simple and elegent
+# primitive multiply: only can use bitwise and comparision, need add help
+#                     function, multiply is implemented by additinon
+# x to the power of y: step by power of 2, third algo, natrual, elegent, fast
+#                      bring the time complexity from N^2 to N
+#                      which based on obeservation that any number can be
+#                      represented by a sum of series of power of 2
+# reverse digit: modular, floor divide, how to get LSB/MSB of a digit
+# is number palindromic: same as above
+# unifor ramdom number: based on a (0, 1) random function, based on any number
+#                       can be represent by binary format
+# rectangle intersection: think one dimention at a time, divide and conquer?
+#                         sweep line algo?                         
+
+
+
 # ref
 # http://mathhelpforum.com/number-theory/123347-every-natural-number-sum-powers-2-a.html
 # https://mathlesstraveled.com/2008/04/18/challenge-12-sums-of-powers-of-two/
