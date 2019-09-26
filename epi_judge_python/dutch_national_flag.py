@@ -11,7 +11,11 @@ def first(pivot_index, A):
     s, e = 0, len(A) - 1
     ms, me = -1, -1
 
-    while s < e:
+    # print('\n')
+    # print(A)
+    # print(len(A), pivot_index, pivot_value)
+
+    while s <= e:
         if A[s] < pivot_value:
             if ms != -1:
                 A[ms], A[s] = A[s], A[ms]
@@ -24,12 +28,16 @@ def first(pivot_index, A):
             else:
                 ms, me = s, s
             s += 1
-        else: # A[s] > pivot_value
+        else:
             while A[e] > pivot_value and e > s:
                 e -= 1
-            if s != e:
-                A[s], A[e] = A[e], A[s]
-                e -= 1
+            A[s], A[e] = A[e], A[s]
+            e -= 1
+
+        # print("\n", s, e, '\n', A)
+
+    # print("after \n")
+    # print(A)
 
     return A
 
