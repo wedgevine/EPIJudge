@@ -24,8 +24,44 @@ def first(A):
 
     return A
 
+def second(A):
+    carry = 1
+
+    for i in reversed(range(len(A))):
+        A[i] += carry
+        if A[i] == 10:
+            A[i] = 0
+            carry = 1
+        else:
+            carry = 0
+
+    if carry == 1:
+        A[0] = 1
+        A.append(0) 
+    
+    return A
+
+# this is the fastest, why?
+# no carry variable, no extra computation for it
+def third(A):
+
+    A[-1] += 1
+    for i in reversed(range(1, len(A))):
+        if A[i] < 10:
+            break
+        A[i] = 0
+        A[i-1] += 1
+
+    if A[0] == 10:
+        A[0] = 1
+        A.append(0)
+      
+    return A
+
 def plus_one(A):
-    return first(A)
+    # return first(A)
+    # return second(A)
+    return third(A)
 
 
 if __name__ == '__main__':
