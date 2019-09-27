@@ -41,8 +41,29 @@ def first(pivot_index, A):
 
     return A
 
+def second(pivot_index, A):
+    pivot_value = A[pivot_index]
+    smaller, equal, larger = 0, 0, len(A)
+
+    # smaller group A[:smaller]
+    # equal group A[smaller:equal]
+    # unclassified group A[equal:larger]
+    # larger group A[larger:]
+    while equal < larger:
+        if A[equal] < pivot_value:
+            A[smaller], A[equal] = A[equal], A[smaller]
+            smaller, equal = smaller + 1, equal + 1
+        elif A[equal] == pivot_value:
+            equal += 1
+        else:
+            larger -= 1
+            A[equal], A[larger] = A[larger], A[equal]  
+
+    return A
+
 def dutch_flag_partition(pivot_index, A):
-    first(pivot_index, A)
+    # first(pivot_index, A)
+    second(pivot_index, A)
 
 
 @enable_executor_hook
