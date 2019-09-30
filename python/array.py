@@ -7,6 +7,7 @@
 # so the complexity is O(N)
 # so better to delete/add elements from the end, not the start
 # or instead of deleting an element, consider overwriting it
+# "python array append vs insert"
 
 # a benefit of array is we can work on it from both ends
 # try to work on the space of the array itself, to reduce the space to O(1)
