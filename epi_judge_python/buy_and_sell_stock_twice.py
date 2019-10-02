@@ -35,24 +35,36 @@ def second(prices):
     current, last = 1, len(prices) - 1
     low, high = [0, 0], [0, 0]
     current_low = 0
-    profit = 0.0
 
     while current <= last:
         if prices[current] < prices[current_low]:
             current_low = current
         if prices[current] > prices[current_low]:
-            if prices[high[0]] - prices[low[1]] <= prices[high[1]] - prices[current_low]:
-                high[0] = high[1]
+            if low[0] == 0 or low[0] == current_low:
+                low[0] = current_low
+                high[0] = current
+            elif low[1] == 0 or low[1] == current_low:
                 low[1] = current_low
                 high[1] = current
-                profit = (prices[high[0]] - prices[low[0]])  + (prices[high[1]] - prices[low[1]])
-
+            else:
+                sd = min(prices[high[0]] - prices[low[1]], prices[high[1]] - prices[current_low])
+                if prices[current] - prices[current_low] > sd:
+                    if prices[high[0]] - prices[low[1]] < prices[high[1]] - prices[current_low]:
+                        high[0] = high[1]
+                        low[1] = current_low
+                        high[1] = current
+                    else:
+                        high[1] = current
+                        current_low = high[1]
         current += 1
 
-    return profit
+    print('\n', high[0], low[0], prices[high[0]], prices[low[0]])
+    print('\n', high[1], low[1], prices[high[1]], prices[low[1]])
+    return (prices[high[0]] - prices[low[0]]) + (prices[high[1]] - prices[low[1]])
 
 def buy_and_sell_stock_twice(prices):
-    return first(prices)
+    # return first(prices)
+    return second(prices)
 
 
 if __name__ == '__main__':
