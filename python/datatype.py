@@ -66,12 +66,14 @@ print(float(True))
 print(float(False))
 print(float(123))
 print(float('-12.34'))
+print(float('inf')) # acts as an unbounded upper value for comparison
 
 #%% boolean
 print(type(True))
 print(type(False))
 print(isinstance(True, bool))
 # operation
+print(not True, not False)
 print(True and False)   # or use &
 print(True or False)    # or use |
 print(2 < 3)    
@@ -362,6 +364,9 @@ print(numbers)
 # reverse "in place"
 numbers.reverse()
 print(numbers)
+# or reveresed
+for i in reversed(numbers):
+    print(i)
 # function sorted return a sorted copy of the list
 sorted_numbers = sorted(numbers)
 print(sorted_numbers)
@@ -519,4 +524,10 @@ print(even_numbers < even_numbers)  # < to check proper subset
 # https://stackoverflow.com/questions/2238355/what-is-the-pythonic-way-to-unpack-tuples
 # https://wsvincent.com/python-tuple-unpacking/
 # https://chrisalbon.com/python/basics/unpacking_a_tuple/
+
+# iterable, iterator
+# comprehension, generator, map(), filter(), lambda
+# https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Comprehensions.html
+# https://www.pythonlikeyoumeanit.com/Module2_EssentialsOfPython/Generators_and_Comprehensions.html
+# https://stackoverflow.com/questions/16940293/why-is-there-no-tuple-comprehension-in-python
 
