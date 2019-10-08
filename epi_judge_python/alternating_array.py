@@ -5,6 +5,10 @@ from test_framework.test_failure import PropertyName, TestFailure
 from test_framework.test_utils import enable_executor_hook
 
 
+def first(A):
+
+    return 
+    
 def rearrange(A):
     # TODO - you fill in here.
     return
