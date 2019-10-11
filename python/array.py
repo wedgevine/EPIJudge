@@ -12,3 +12,9 @@
 # a benefit of array is we can work on it from both ends
 # try to work on the space of the array itself, to reduce the space to O(1)
 # be careful with index handling, never out of range
+
+# learnt from apply_permutation, if want to change a list passed as parameter
+# for example, for function, f(a), a is a list, inside the function, do
+# a[:] = new_list, instead a = new_list, the former changed elements of a
+# while the latter changed value of a, making a point to another object
+# https://stackoverflow.com/questions/22054698/python-modifying-list-inside-a-function

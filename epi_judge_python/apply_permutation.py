@@ -1,8 +1,41 @@
 from test_framework import generic_test
 
 
+def first(perm, A):
+
+    size = len(A)
+    B = [0] * size
+
+    for i in range(size):
+        B[perm[i]] = A[i]
+
+    A[:] = B    
+
+    return
+
+# unlike first, try to in-place permutation, in constant memory space
+def second(perm, A):
+
+    size = len(A)
+    start, current, finished = 0, 0, 0
+    
+    while finished < size:
+        while perm[start] == -1:
+            start += 1
+        current = start
+        next_value = A[current]
+        while perm[current] != -1:
+            next_index = perm[current]
+            A[next_index], next_value = next_value, A[next_index]
+            finished += 1
+            perm[current] = -1        
+            current = next_index
+
+    return 
+
 def apply_permutation(perm, A):
-    # TODO - you fill in here.
+    # first(perm, A)
+    second(perm, A)
     return
 
 
