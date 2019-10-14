@@ -6,9 +6,21 @@ from test_framework.random_sequence_checker import (
     compute_combination_idx, run_func_with_retries)
 from test_framework.test_utils import enable_executor_hook
 
+import random
+
+def first(k, A):
+
+    current_index, size = 0, len(A)
+    while current_index < k:
+        index = random.randrange(current_index, size)
+        A[current_index], A[index] = A[index], A[current_index]
+        current_index += 1
+
+    return
+
 
 def random_sampling(k, A):
-    # TODO - you fill in here.
+    first(k, A)
     return
 
 

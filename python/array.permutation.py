@@ -1,4 +1,5 @@
 # apply_permutation.py
+# search "permute array in place"
 # next_permutation.py
 
 # k-th permutation
