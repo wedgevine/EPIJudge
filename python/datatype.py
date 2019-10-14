@@ -66,7 +66,11 @@ print(float(True))
 print(float(False))
 print(float(123))
 print(float('-12.34'))
-print(float('inf')) # acts as an unbounded upper value for comparison
+# in the process of tracking min/max numbers
+# float('nan') can be used as initial value
+# float('inf') and float('-inf') can be used for initial comparison 
+# unbounded upper value and lower value respectively
+print(float('inf'), float('-inf'), float('nan'))
 
 #%% boolean
 print(type(True))

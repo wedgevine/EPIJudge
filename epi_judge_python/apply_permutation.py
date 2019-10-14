@@ -14,6 +14,11 @@ def first(perm, A):
     return
 
 # unlike first, try to in-place permutation, in constant memory space
+# thinking there are multiple cyclic permutations, each is a closed circle
+# each element in the circle takes position of its next element, the last
+# element takes position of first element
+# the algo is find all such circles, for each circle, re-position elements
+# one by one, thus, only constant extra spaces are needed
 def second(perm, A):
 
     size = len(A)
