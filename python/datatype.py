@@ -535,3 +535,9 @@ print(even_numbers < even_numbers)  # < to check proper subset
 # https://www.pythonlikeyoumeanit.com/Module2_EssentialsOfPython/Generators_and_Comprehensions.html
 # https://stackoverflow.com/questions/16940293/why-is-there-no-tuple-comprehension-in-python
 
+# 20191015 need to deal with stream, reviewed iterable/iterator again
+# https://hackmag.com/coding/lets-tame-data-streams-with-python/
+# https://rare-technologies.com/data-streaming-in-python-generators-iterators-iterables/
+# looks module itertools is related with functional programming
+# https://docs.python.org/3/howto/functional.html
+

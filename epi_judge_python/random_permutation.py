@@ -1,16 +1,25 @@
 import copy
 import functools
 import math
+import random
 
 from test_framework import generic_test
 from test_framework.random_sequence_checker import (
     check_sequence_is_uniformly_random, run_func_with_retries)
 from test_framework.test_utils import enable_executor_hook
 
+def first(n):
+
+    result = [i for i in range(n)]
+
+    for i in range(n):
+        chosen = random.randrange(i, n)
+        result[i], result[chosen] = result[chosen], result[i]
+
+    return result
 
 def compute_random_permutation(n):
-    # TODO - you fill in here.
-    return []
+    return first(n)
 
 
 @enable_executor_hook

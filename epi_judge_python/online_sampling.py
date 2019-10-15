@@ -1,4 +1,6 @@
 import functools
+import itertools
+import random
 
 from test_framework import generic_test
 from test_framework.random_sequence_checker import (
@@ -6,11 +8,24 @@ from test_framework.random_sequence_checker import (
     compute_combination_idx, run_func_with_retries)
 from test_framework.test_utils import enable_executor_hook
 
+# need to familar with how to deal with stream with itertools
+def first(stream, k):
+
+    # Stores the first k elements.
+    running_sample = list(itertools.islice(stream, k))
+    current_list_len = k
+
+    for i in stream:
+        current_list_len += 1
+        p = random.randrange(0, current_list_len)
+        if p < k:
+            running_sample[p] = i
+    
+    return running_sample
 
 # Assumption: there are at least k elements in the stream.
 def online_random_sample(stream, k):
-    # TODO - you fill in here.
-    return []
+    return first(stream, k)
 
 
 @enable_executor_hook

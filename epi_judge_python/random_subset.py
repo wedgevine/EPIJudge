@@ -1,4 +1,5 @@
 import functools
+import random
 
 from test_framework import generic_test
 from test_framework.random_sequence_checker import (
@@ -6,10 +7,17 @@ from test_framework.random_sequence_checker import (
     compute_combination_idx, run_func_with_retries)
 from test_framework.test_utils import enable_executor_hook
 
+def first(n, k):
+
+    p = list(range(n))
+    for i in range(k):
+        chosen = random.randrange(i, n)
+        p[i], p[chosen] = p[chosen], p[i]
+
+    return p[:k]
 
 def random_subset(n, k):
-    # TODO - you fill in here.
-    return []
+    return first(n, k)
 
 
 @enable_executor_hook
