@@ -1,15 +1,27 @@
 import collections
 import functools
 import math
+import random
 
 from test_framework import generic_test
 from test_framework.random_sequence_checker import run_func_with_retries
 from test_framework.test_utils import enable_executor_hook
 
+# consider drop a needle to [0, 1), each probability represent a line segment
+# longer line segment has bigger chance to be punched by the needle
+def first(values, probabilities):
+
+    p = random.uniform(0, 1)
+    size = len(values)
+    s = 0
+
+    for i in range(size):
+        s += probabilities[i]
+        if p < s:
+            return values[i]
 
 def nonuniform_random_number_generation(values, probabilities):
-    # TODO - you fill in here.
-    return 0
+    return first(values, probabilities)
 
 
 @enable_executor_hook

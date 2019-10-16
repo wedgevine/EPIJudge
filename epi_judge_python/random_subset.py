@@ -7,6 +7,40 @@ from test_framework.random_sequence_checker import (
     compute_combination_idx, run_func_with_retries)
 from test_framework.test_utils import enable_executor_hook
 
+def third(n, k):
+
+    moved = {}
+
+    for i in range(k):
+        chosen = random.randrange(i, n)
+        current_value = moved.get(i, i)
+        chosen_value = moved.get(chosen, chosen)
+        moved[i] = chosen_value
+        moved[chosen] = current_value
+
+    return [moved[i] for i in range(k)]
+
+# second is wrong, not considered for i in range(K)
+# the i-th element could have been moved, so its value may not be i
+# so the value variable maybe hold the wrong value
+def second(n, k):
+
+    moved = {}
+    result = list(range(k))
+
+    for i in range(k):
+        chosen = random.randrange(i, n)
+        value = result[i]
+        result[i] = moved.get(chosen, chosen)
+        # if chosen in moved:
+        #     result[i] = moved[chosen]
+        # else:
+        #     result[i] = chosen
+        moved[chosen] = value
+        print(i, chosen, result, moved)
+
+    return result
+
 def first(n, k):
 
     p = list(range(n))
@@ -17,7 +51,9 @@ def first(n, k):
     return p[:k]
 
 def random_subset(n, k):
-    return first(n, k)
+    # return first(n, k)
+    # return second(n, k)
+    return third(n, k)
 
 
 @enable_executor_hook
