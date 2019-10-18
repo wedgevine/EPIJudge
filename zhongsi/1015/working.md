@@ -1,3 +1,7 @@
+## 20191018
+内: algo, by subject, summary, wide, basic
+外：phone, bull/process, LI and JL prep, story yuan, tech dong, little by little, summary
+
 ## 20191017
 news
 https://www.mitbbs.com/bbsdoc1/JobHunting_1_0.html
