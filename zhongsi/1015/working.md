@@ -1,3 +1,14 @@
+## 20191017
+news
+https://www.mitbbs.com/bbsdoc1/JobHunting_1_0.html
+https://1o24bbs.com/
+https://www.1point3acres.com/bbs/
+花花酱 https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
+
+will finish after two-sum
+How to: Work at Google — Example Coding/Engineering Interview
+https://www.youtube.com/watch?v=XKu_SEDAykw
+
 ## 20191016
 permutation
 "permutation filetype:pdf"
@@ -9,6 +20,7 @@ https://www.math.ust.hk/~mabfchen/Math3343/Generating-Permutations.pdf
 lc
 https://github.com/azl397985856/leetcode
 search lc in zhihu, there are many 学习笔记 in github/blog
+花花酱 https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 
 Steve Yegge google 
 https://zhuanlan.zhihu.com/p/22881223 
@@ -36,6 +48,7 @@ Concrete Mathematics Textbook by Donald Knuth, Oren Patashnik, and Ronald Graham
 The Art of Computer Programming
 「Algorithms by Sedgewick」. 基础的算法入门书，有完整的 Java 代码
 Programming Pearls
+作为一个低级码农，该怎样跳到一个算法岗位？https://www.zhihu.com/question/28096398/answer/39380892
 
 leetcode 位操作
 https://darktiantian.github.io/LeetCode算法题整理（位运算篇）Bit-Manipulation/
