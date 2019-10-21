@@ -1,3 +1,10 @@
+## 20191021
+python
+https://treyhunner.com/blog/archives/
+python idioms
+https://medium.com/the-andela-way/idiomatic-python-coding-the-smart-way-cc560fa5f1d6
+https://en.wikibooks.org/wiki/Python_Programming/Idioms
+
 ## 20191018
 内: algo, by subject, summary, wide, basic
 外：phone, bull/process, LI and JL prep, story yuan, tech dong, little by little, summary
