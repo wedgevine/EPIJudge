@@ -7,6 +7,9 @@ https://en.wikibooks.org/wiki/Python_Programming/Idioms
 python ternary
 <expression 1> if <condition> else <expression 2>
 https://stackoverflow.com/questions/394809/does-python-have-a-ternary-conditional-operator
+chained operation
+chained comparison https://docs.python.org/3.6/reference/expressions.html#comparisons
+chained assignment https://stackoverflow.com/questions/11498441/what-is-this-kind-of-assignment-in-python-called-a-b-true/11498454
 
 ## 20191018
 内: algo, by subject, summary, wide, basic
