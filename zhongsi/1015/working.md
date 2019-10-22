@@ -4,6 +4,9 @@ https://treyhunner.com/blog/archives/
 python idioms
 https://medium.com/the-andela-way/idiomatic-python-coding-the-smart-way-cc560fa5f1d6
 https://en.wikibooks.org/wiki/Python_Programming/Idioms
+python ternary
+<expression 1> if <condition> else <expression 2>
+https://stackoverflow.com/questions/394809/does-python-have-a-ternary-conditional-operator
 
 ## 20191018
 内: algo, by subject, summary, wide, basic
