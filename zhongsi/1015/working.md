@@ -84,11 +84,11 @@ Programming Pearls
 可以优先刷LeetCode和LintCode, 有时间刷一下hackerrank. 好运~
 https://www.evernote.com/shard/s576/client/snv?noteGuid=+7e58b450-1abe-43a8-bf82-fbf07f1db13c&noteKey=049802174415b418a2e65f75b744ab72&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs576%2Fsh%2F+7e58b450-1abe-43a8-bf82-fbf07f1db13c%2F049802174415b418a2e65f75b744ab72&title=Interview%2BPreparation
 九章 太阁 算法
-
-how to design
-http://harlon.org/categories/Design/
-
+competitive programming https://cses.fi/book/
 leetcode 详解 https://hk029.gitbooks.io/leetbook/topic_include.html
+
+system design
+http://harlon.org/categories/Design/
 
 leetcode 位操作
 https://darktiantian.github.io/LeetCode算法题整理（位运算篇）Bit-Manipulation/
@@ -102,9 +102,11 @@ https://blog.csdn.net/xsloop/article/details/47006241
 https://blog.csdn.net/linhuanmars/article/details/39178439
 https://blog.csdn.net/huanghanqian/article/details/79343855
 
-array/list/数组
-算法一招鲜——双指针问题 https://zhuanlan.zhihu.com/p/71643340
-双指针法的常见应用 https://blog.csdn.net/ohmygirl/article/details/7850068
+array/list/数组 - 双指针法的常见应用 
+https://blog.csdn.net/ohmygirl/article/details/7850068
+https://blog.csdn.net/oXiaoBuDing/article/details/84504767
+https://blog.csdn.net/weixin_42552135/article/details/82556234
+https://blog.csdn.net/qq_43699339/article/details/88376494
 
 and there is inner, story, b, li, photo, phone greeting, wedgevine@
 
