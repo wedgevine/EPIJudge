@@ -88,6 +88,22 @@ competitive programming https://cses.fi/book/
 leetcode 详解 https://hk029.gitbooks.io/leetbook/topic_include.html
 
 system design
+site:ycombinator.com "per second"|achieving
+Storing 50M events per second in Elasticsearch (datadome.co)
+https://news.ycombinator.com/item?id=21327443
+site:zhihu.com 面试 系统设计
+https://www.zhihu.com/question/26312148
+https://www.zhihu.com/question/61594143
+https://zhuanlan.zhihu.com/p/26173608
+https://zhuanlan.zhihu.com/p/20578447
+https://zhuanlan.zhihu.com/p/21313382
+https://zhuanlan.zhihu.com/p/20347666
+https://zhuanlan.zhihu.com/p/29758877
+https://zhuanlan.zhihu.com/p/44505941
+https://zhuanlan.zhihu.com/p/70743436
+https://zhuanlan.zhihu.com/p/26663354
+BitTiger官方频道 BitTiger Official Channel
+
 http://harlon.org/categories/Design/
 
 leetcode 位操作
