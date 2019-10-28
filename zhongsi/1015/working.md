@@ -1,3 +1,25 @@
+## 20191028
+elementary
+* http://lipingma.net/math/%E5%AF%B9%E4%BA%8E%E2%80%9C%E5%84%BF%E7%AB%A5%E6%95%B0%E5%AD%A6%E2%80%9D%E5%9C%A8%E6%95%99%E5%AD%A6%E4%B8%AD%E4%BD%9C%E7%94%A8%E4%B9%8B%E5%8F%8D%E6%80%9D%20%E4%BB%8E%E4%B8%80%E4%BD%8D%E6%95%B0%E5%8A%A0%E6%B3%95%E8%AF%B4%E8%B5%B7.pdf
+* 小学数学知识点汇总 | 1-6年级数与代数 http://www.jiaoyujiam.com/news_1228883.html
+* 人教版小学数学知识点大全 https://wenku.baidu.com/view/9da6b6721711cc7931b716be.html
+  http://wk.superlgr.com/views/63808.html
+* 小学数学知识点总结完整版（人教版） https://xiaoxue.hujiang.com/xsc/shuxue/p5502/
+* 小学数学知识点汇总（小学数学知识点公式） http://sz.jiajiaoban.com/e/20150731/55bb27ef55b7d.shtml
+* 上海小学数学知识点总结 http://zhixue.org/studydetail_25.html
+* 苏教版小学数学知识点''数与代数''板块总结大全  http://www.360doc.com/content/19/0227/11/15150098_817862279.shtml#
+* 小学数学练习题 https://xiaoxue.hujiang.com/zt/yssxlx/  
+  http://www.aoshu.com/xxsx/st/ 
+
+middle
+* http://www.vleee.com/upfile/人教版【初中数学】知识点总结-全面整理.pdf
+* 人教版初中数学知识点总结 https://blog.csdn.net/qq_30062589/article/details/63685988
+* 人教版初中数学知识点总结大全！ https://zhuanlan.zhihu.com/p/52518422
+
+organized by 纲, 背景，概念，公式，应用，练习，方法，技巧
+
+for edit, try https://marketplace.visualstudio.com/items?itemName=goessner.mdmath
+
 ## 20191021
 python
 https://treyhunner.com/blog/archives/
