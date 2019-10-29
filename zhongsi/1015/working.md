@@ -1,3 +1,135 @@
+## 20191029
+couting, permutation, 计数， 数数， 排列， 安排
+
+1. counting, shapes, 小学奥数, learned count by order, left to right, top to bottom, small to big
+1. counting and enumerating, numbers, how many possible outcomes, arrangements, results
+    1. pizza, crust, cheese, topping
+    1. burger, bread, meat, sauce
+    1. meal, salad, side, main, drink
+    1. to ware, jacket, trousure
+    1. buying car, model, color
+    1. lock combo
+    1. password 
+    1. three-digit number from (0, 2, 4, 6, 8)
+    1. six books in shelf
+1. fundamental counting principle
+    1. 枚举法 http://blog.sina.com.cn/s/blog_614325f10100ef1z.html
+    1. 加法原理和乘法原理 http://blog.sina.com.cn/s/blog_614325f10100efgv.html
+
+
+1. tree graph, table graph, just write all of them
+1. can repeat, can't repeat
+1. general, abstract, permutation,ordering of n objects, n numbers (1, 2, ..., N) arragement, how many, what they look like
+1. list all posible outcomes, we can ask what is the probability for some kind of outcome
+    1. three-digit number from (0, 2, 4, 6, 8), what is the P for number could be divided by 3
+    1. Three dice are thrown. What is the probability that the product of the three numbers is a multiple of 5? http://www.mymathcounts.com/documents/AMC8test8sample.pdf
+    1. Jane has five pieces of candy and will eat one piece
+    each of the next five days. Three pieces are
+    wrapped in blue foil and two pieces are wrapped in
+    yellow foil. What is the probability that she will eat
+    a piece of candy wrapped in yellow foil on the fifth
+    day G6WW28-30.pdf
+    
+
+做一件事， 有很多种可能的安排
+* what to eat for breakfast
+* Saturday plan, cleaning, shopping, farm, tennis, swimming, play game, study
+* tokyo, first day, second day, etc  
+* combo of a lock (repetition permutation)
+* buying car, model, color
+
+permutations, or all possible ways of doing something
+
+首先， 怎样列出所有可能的结果， 然后可以选择，比较， 做结论
+常常可以用(1, 2, 3, ... , N)的排列permutation来表示一种安排
+https://artofproblemsolving.com/wiki/index.php/Permutation
+1，2，3 可以表示很多东西， 吃的， plan, 东京玩的地方
+怎样列出所有的安排？
+
+Fundamental Counting Principle:
+If one event can occur in m ways and a second event can occur in n ways, then
+both events can occur in m· n ways, provided the outcome of the first event does
+not influence the outcome of the second event. 
+
+* Example: A restaurant offers a choice of 2 salads, 6 main dishes, 4 side dishes, and 3
+desserts. How many different 4-course meals can be selected? 
+* Example: David has 6 books that he wishes to arrange on his desk. How many different
+arrangements are possible? 
+* Example: How many different 7-digit telephone numbers are possible if the first digit
+can not be zero and no digit may repeat? 
+* In many real-life problems you want to count the number of possibilities. For
+instance, suppose you own a small deli. You offer 4 types of meat (ham, turkey, roast
+beef, and pastrami) and 3 types of bread (white, wheat, and rye). How many choices
+do your customers have for a meat sandwich?
+    * One way to answer this question is to use a tree diagram, as shown below. From the
+list on the right you can see that there are 12 choices.
+    * Another way to count the number of possible sandwiches is to use the fundamental
+counting principle. Because you have 4 choices for meat and 3 choices for bread,
+the total number of choices is 4 • 3 = 12.
+* CRIMINOLOGY Police use photographs of various facial features to help witnesses
+identify suspects. One basic identification kit contains 195 hairlines, 99 eyes and
+eyebrows, 89 noses, 105 mouths, and 74 chins and cheeks.
+    * The developer of the identification kit claims that it can produce billions of
+different faces. Is this claim correct?
+    * A witness can clearly remember the hairline and the eyes and eyebrows of a
+suspect. How many different faces can be produced with this information? 
+* The standard configuration for a New York license
+plate is 3 digits followed by 3 letters.
+    * How many different license plates are possible if digits and letters can be repeated?
+    * How many different license plates are possible if digits and letters cannot be repeated?
+* An ordering of n objects is a of the objects. For instance, there are six
+permutations of the letters A, B, and C: ABC, ACB, BAC, BCA, CAB, CBA.
+* Twelve skiers are competing in the final round of the Olympic freestyle skiing aerial
+competition.
+    * In how many different ways can the skiers finish the competition? (Assume there
+are no ties.)
+    * In how many different ways can 3 of the skiers finish first, second, and third to
+win the gold, silver, and bronze medals?
+* You are considering 10 different colleges. Before you decide to apply to the colleges,
+you want to visit some or all of them. In how many orders can you visit (a) 6 of the
+colleges and (b) all 10 colleges?
+
+于是就有很多种可能的结果， 有些结果我们喜欢， 有些不喜欢， 就可以问chance/likelyhood/probability/
+概率有多大
+
+1. three-digit number from (0, 2, 4, 6, 8), what is the probability that this number could be divided by 3
+A 3-digit number is divisible by 3 if the sum of its digits is divisible by 3.
+The first digit cannot be 0, so we have the following four groups of 3 such that the three
+different numbers sum to a multiple of 3:
+2, 4, 0; 8, 4, 0; 6, 4, 2; 8, 6, 4.
+These four cases produce 4, 4, 6, and 6 numbers respectively.
+There are 4 + 4 + 6 + 6 = 20 such numbers. There are a total of 443 = 48 three-digit
+numbers using the digits 0, 2, 4, 6, and 8.
+The probability is 20/48
+1. Three dice are thrown. What is the probability that the product of the three numbers is
+a multiple of 5? http://www.mymathcounts.com/documents/AMC8test8sample.pdf
+1. Jane has five pieces of candy and will eat one piece
+each of the next five days. Three pieces are
+wrapped in blue foil and two pieces are wrapped in
+yellow foil. What is the probability that she will eat
+a piece of candy wrapped in yellow foil on the fifth
+day G6WW28-30.pdf
+
+resource
+* 小学奥数计数问题 http://www.aoshu.com/tk/aszsd/js/mjf/
+* 小学奥数blog http://blog.sina.com.cn/s/articlelist_1631790577_1_1.html
+* 美国的math learning, grade1 - grade8 
+https://www.homeschoolmath.net/teaching/
+https://www.homeschoolmath.net/teaching/pdfs/6-8/
+has some weekly practices
+https://www.mymathcounts.com/Forum/index.php?topic=317.0
+* 50 amc lectures 
+* chap26 counting https://www.mymathcounts.com/documents/Chapter26Counting.pdf
+* book2 counting http://www.mymathcounts.com/documents/PChapter26Countingd.pdf
+* chap1 logical reasoning https://www.mymathcounts.com/documents/Chapter1LogicalreasoningL.pdf
+* chap12 counting principle http://www.mymathcounts.com/documents/Chapter12CountingprinciplesL.pdf
+* 50 MATHCOUNTS LECTURES (10) RATIOS, RATES, AND PROPORTIONS
+* Elementary School Math Competition Lectures
+(1) Chickens And Rabbits Problem Solving Skills
+https://www.mymathcounts.com/documents/chickenrabbitssamples.pdf
+* 2017 Summer AMC 8/Mathcounts Schedule (Textbooks: 50 Mathcounts Lectures)
+a useful list about subjects in the exam
+
 ## 20191028
 elementary
 * http://lipingma.net/math/%E5%AF%B9%E4%BA%8E%E2%80%9C%E5%84%BF%E7%AB%A5%E6%95%B0%E5%AD%A6%E2%80%9D%E5%9C%A8%E6%95%99%E5%AD%A6%E4%B8%AD%E4%BD%9C%E7%94%A8%E4%B9%8B%E5%8F%8D%E6%80%9D%20%E4%BB%8E%E4%B8%80%E4%BD%8D%E6%95%B0%E5%8A%A0%E6%B3%95%E8%AF%B4%E8%B5%B7.pdf
