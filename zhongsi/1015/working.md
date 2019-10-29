@@ -117,12 +117,18 @@ https://blog.csdn.net/EbowTang/article/details/51228929
 https://blog.csdn.net/xsloop/article/details/47006241
 https://blog.csdn.net/linhuanmars/article/details/39178439
 https://blog.csdn.net/huanghanqian/article/details/79343855
+位运算简介及实用技巧（一）：基础篇 http://www.matrix67.com/blog/archives/263
+https://algorithm.yuanbin.me/zh-hans/basics_misc/bit_manipulation.html
 
 array/list/数组 - 双指针法的常见应用 
 https://blog.csdn.net/ohmygirl/article/details/7850068
 https://blog.csdn.net/oXiaoBuDing/article/details/84504767
 https://blog.csdn.net/weixin_42552135/article/details/82556234
 https://blog.csdn.net/qq_43699339/article/details/88376494
+
+some blogs
+http://www.matrix67.com/blog/
+
 
 and there is inner, story, b, li, photo, phone greeting, wedgevine@
 
