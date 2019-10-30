@@ -1,3 +1,75 @@
+## 20191030
+1. couting, permutation and probability
+1. travel
+1. calculate smartly
+1. pattern
+1. tile and folding paper, cube
+1. ratio and word problem
+1. set and logic
+1. geometry
+
+from https://www.mymathcounts.com/
+2017 Summer AMC 8/Mathcounts Schedule
+(Textbooks: 50 Mathcounts Lectures)
+May 29, 2017 to July 30, 2017
+Every Monday, Wednesday and Friday from 7:30 pm to 8:30 pm Eastern Time)
+1. May 29, 2017 Operations with Fractions, Decimals, Percents
+2. May 31, 2017 Ratios and Proportions
+3. June 2, 2017 Logic Reasoning
+4. June 5, 2017 Counting Principles
+5. June 7, 2017 Exponents
+6. June 9, 2017 Radicals
+7. June 12, 2017 Absolute Values
+8. June 14, 2017 Divisibility
+9. June 16, 2017 Solving Equations
+10. June 19, 2017 Systems of Equations
+11. June 21, 2017 Solving Inequalities
+12. June 23, 2017 Venn Diagrams
+13. June 26, 2017 Combinatorics
+14. June 28, 2017 Angles and Triangles
+15. June 30, 2017 Similar Triangles
+16. July 3, 2017 Pythagorean Theorem
+17. July 5, 2017 Angle Bisectors and Medians
+18. July 7, 2017 Triangular Inequality
+19. July 10, 2017 Area Method
+20. July 12, 2017 Circles
+21. July 14, 2017 Polygon
+22. July 17, 2017 Factors
+23. July 19, 2017 Prime Numbers
+24. July 21, 2017 Remainders
+25. July 24, 2017 Coordinate systems
+26. July 26, 2017 Lines And Equations
+27. July 28, 2017 Probability 
+
+2017 Summer AMC 10 Training Program
+May 30, 2017 to August 1, 2017
+Every Tuesday and Thursday from 7:30 pm to 8:30 pm Eastern Time)
+Algebra:
+May 30, 2017 Algebraic Simplification
+1. June 1, 2017 Equations Solving Skills
+2. June 6, 2017 Quadratic Equations
+3. June 8, 2017 Solving System of Equations
+4. June 13, 2017 Factoring Methods
+Geometry
+June 15 2017 Coordinate Geometry – Lines and Circles
+6. June 20, 2017 Triangle Area and Area Method
+7. June 22, 2017 the Mass Point Method
+8. June 27, 2017 Angle Bisector and Median
+9. June 29, 2017 Similar Triangles
+Number Theory
+July 4, 2017 Divisibility (YouTube Video only, Happy Holiday! No class)
+11. July 6, 2017 Factors and Divisors
+12. July 11, 2017 Prime Numbers
+13. July 13, 2017 Character of Digits
+Counting
+July 18, 2017 Counting by Permutation and Combination
+15. July 20, 2017 Balls and Boxes Circle – Radius, Circumference, and Areas
+16. July 25, 2017 Counting with Geometric Figures
+17. July 27, 2017 Probability Mean, Median, Mode, and Range
+18. August 1, 2017 Mean, Median, Mode, and Range
+
+if there is a plan, there need a plan
+
 ## 20191029
 couting, permutation, 计数， 数数， 排列， 安排
 
@@ -129,6 +201,16 @@ https://www.mymathcounts.com/Forum/index.php?topic=317.0
 https://www.mymathcounts.com/documents/chickenrabbitssamples.pdf
 * 2017 Summer AMC 8/Mathcounts Schedule (Textbooks: 50 Mathcounts Lectures)
 a useful list about subjects in the exam
+* https://www.google.com/search?q=amc8&lr=lang_zh-CN&tbs=lr:lang_1zh-CN
+* 陶哲轩教你学数学pdf
+* 天才是怎样练成的？ http://blog.sina.com.cn/s/blog_687b0a51010110y9.html
+  学习， 一点一点进步， 舒适区，学习区，恐慌区，总在学习区中，一点点反馈改进，不要累着
+* 柳智宇：数学竞赛经验谈  http://blog.sina.com.cn/s/blog_687b0a5101013kt3.html
+  recommended some books
+* 美国数学竞赛8年级1985-2017共33年的所有真题标注完了。
+  http://www.rootofmath.com/%E7%BE%8E%E5%9B%BD%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B8%E5%B9%B4%E7%BA%A7amc8%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A
+
+
 
 ## 20191028
 elementary
