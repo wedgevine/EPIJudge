@@ -1,3 +1,13 @@
+## 20191031
+todo
+1. counting and probability
+1. full
+1. smart calculation and pattern
+1. ratio and word problem
+1. full
+1. geometry, area
+1. za, paper folding, tile, logic, set
+
 ## 20191030
 1. couting, permutation and probability
 1. travel
