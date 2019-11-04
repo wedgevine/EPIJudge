@@ -58,7 +58,9 @@ how to learn math
   https://blog.ggrarea.cn/archives/26394.html  
   https://www.toutiao.com/i6560841087768855048/?group_id=6560841087768855048  
 * [听课笔记－数学竞赛](http://shuntengmogua.blogspot.com/) mentioned many books
-
+* [从鸡兔同笼的学习看逻辑思维训练的重要性](http://www.rootofmath.com/%E4%BB%8E%E9%B8%A1%E5%85%94%E5%90%8C%E7%AC%BC%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%9C%8B%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E8%AE%AD%E7%BB%83%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7)
+* https://www.helpingwithmath.com/resources/worksheet-generators.htm
+* [高中数学竞赛看什么书？](https://www.zhihu.com/question/68229008)
  
 ## 20191031
 todo
@@ -281,6 +283,7 @@ a useful list about subjects in the exam
   recommended some books
 * 美国数学竞赛8年级1985-2017共33年的所有真题标注完了。
   http://www.rootofmath.com/%E7%BE%8E%E5%9B%BD%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B8%E5%B9%B4%E7%BA%A7amc8%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A
+
 
 
 
