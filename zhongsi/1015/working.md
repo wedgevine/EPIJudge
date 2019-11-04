@@ -1,3 +1,65 @@
+## 20191102
+how to learn math
+1. 运算练习，概念，练习，计时，记结果
+   https://beastacademy.com/  
+   http://www.moems.org/
+
+1. 速算，巧算， 概念， 练习， 计时， 记结果
+1. 初中数学， 概念， 练习， 记结果
+   AOPS，课本  
+   https://artofproblemsolving.com/videos 
+   https://www.ixl.com/  
+   App Store 上的“猿题库-中学生刷题利器” - Apple
+
+1. 竞赛题，专题， 练习， 记结果
+   alcumus，MATHCOUNT， 国内的  
+   https://artofproblemsolving.com/alcumus  
+1. 每天学十五分钟，练十五分钟
+1. 对于难题，思考，一天后提示；太难，放弃，记住，以后再试 or 看答案，以后再作
+1. 循序渐进，一点一点进步，保持自信，有成就感，所以题不能太难，鼓励，发现进步； 动笔写画的习惯，有记录, 错题本
+1. 准备AMC10
+
+* 总结出知识点， 一小块一小块的，十五分钟讲完， 作练习题， 保存，以后复习， 重复， 尤其做错的
+* 心算，速算练习题
+* 驱动型数学的课外读本 数学小丛书（共18册）, 数学欣赏 作者: H.拉德马赫 / O.特普利茨, 就是那些讲明白为什么的书
+  附注1. 关于驱动型数学的想法，请参看博文”什么样的孩子适合进行高强度奥数训练？“，就是那些在数学发展历史上，
+  真正推动数学进步的那些最基本的题目，让孩子们自己做出来，当然需要老师适当的提示，想法上的，与数学书写规范上的。
+* 通过做题来学数学 《完美的证明》那本书所描述的俄罗斯奥数教学方法
+* [教学研讨微信群：初中代数的重复性训练](http://blog.sciencenet.cn/blog-45143-1129977.html)
+* [初中代数训练十分钟测试公益项目开始招募实践班级或学习小组](http://blog.sciencenet.cn/blog-45143-1169997.html)
+* [分级教学思想下的一种中小学数学教材实现方案（胚胎版） 精选](http://blog.sciencenet.cn/blog-45143-779210.html)
+* [小学应用题的算术解法是什么意思？](https://www.zhihu.com/question/60114262)
+* [超前学习的担忧：学校课堂上怎么办？](http://blog.sciencenet.cn/blog-45143-1195663.html)
+* [Math Teaching Materials](https://www.exeter.edu/mathproblems)
+* [科学猫 关键词：数学]（http://www.scicat.cn/e/search/result/?searchid=43）
+* [王永晖： 首都师范大学数学系](http://blog.sciencenet.cn/home.php?mod=space&uid=45143)
+* https://mathigon.org/
+* [可视化统计概率入门书](https://seeing-theory.brown.edu/cn.html#firstPage)
+* 二：当你进入更高阶段时，你会花更多时间做证明，而不是读证明。这一点在开始的时候很难掌握——这要求与仅仅是读证明有不同的思维模式。
+但是当你有了足够的经验后，你会看到到底是什么让一个证明起作用。这样的话，你理解起其它证明也就容易多了。
+事实上，记住证明最棒的方法就是合上书上的证明，然后努力自己去证。经常遇到的情况是：当你进行到一半的时候会在一个要紧处卡住。
+经过一段沮丧后，就是你去翻看证明的时候了，然后你就会发现到底是哪一点把你难住。接下来，剩下的部分对你来说就是显然的了。
+这样做，你只用记住的就是一个证明的  ”关键想法“了.
+* [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)
+* https://betterexplained.com/archives/
+* 6年级参加AMC8力争获得满分25，即做对全部25个题目；7年级参加美国数学竞赛AMC10，这是美国数学协会专门为10 年级以及10年级以下的学生设计的数学竞赛，并获得90分以上（满分150）；8年级参加AMC10获得120分以上（满分150），进而参加AIME（美国数学邀请赛 )；9年级一开学就参加Math Prize for Girls练兵，积累宝贵经验；10年级参加Math Prize for Girls继续练兵，进入前50名；11年级参加Math Prize for Girls再接再厉，进入前30名；12年级参加Math Prize for Girls进行最后的冲刺，进入前20名。
+* [初中爬藤的一些建议](https://www.backchina.com/blog/320595/article-215943.html)
+* [偏说怎样开始小孩数学竞赛的辅导](http://eddyshome.blogspot.com/2010/10/blog-post_26.html)
+* [数学名师邹同在“亲子阅读”群的讲座](http://webcache.googleusercontent.com/search?q=cache:3KZ6c7D-N14J:blog.sina.com.cn/s/blog_6f4a48b90102veqh.html+&cd=23&hl=en&ct=clnk&gl=us&lr=lang_zh-CN)
+* http://blog.sina.com.cn/xiaoluus 
+* [竞赛题](http://chineseschool123.org/?p=1529) http://chineseschool123.org/
+* [哪里找给娃练习Algebra和Geometry的题](https://kantie.org/topics/huaren/2446516)
+* 奥数教程小蓝本
+* 回应: 笨男孩的幼小数学教育日记 
+* http://blog.newtonchineseschool.org/zhangjian/
+* 新加坡数学 Model Drawing
+  https://posts.careerengine.us/p/5c61af05bfcdba6f87c93c61  
+  https://kknews.cc/zh-sg/education/aa24qaj.html  
+  https://blog.ggrarea.cn/archives/26394.html  
+  https://www.toutiao.com/i6560841087768855048/?group_id=6560841087768855048  
+* [听课笔记－数学竞赛](http://shuntengmogua.blogspot.com/) mentioned many books
+
+ 
 ## 20191031
 todo
 1. counting and probability

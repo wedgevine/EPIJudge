@@ -7,6 +7,10 @@ site:www.mymathcounts.com filetype:pdf Pythagorean Triples
 site:www.math.ucla.edu inurl:radko AMC 8 filetype:pdf
 site:www.judymlevine.com filetype:pdf amc
 
+# summary
+counting
+1996/21, when order doesn't matter, overcount a pair by 2, so we need divide by 2
+
 # 1985 - 1998
 ## geometry
 1985 4 12
