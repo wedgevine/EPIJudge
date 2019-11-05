@@ -61,6 +61,9 @@ how to learn math
 * [从鸡兔同笼的学习看逻辑思维训练的重要性](http://www.rootofmath.com/%E4%BB%8E%E9%B8%A1%E5%85%94%E5%90%8C%E7%AC%BC%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%9C%8B%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E8%AE%AD%E7%BB%83%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7)
 * https://www.helpingwithmath.com/resources/worksheet-generators.htm
 * [高中数学竞赛看什么书？](https://www.zhihu.com/question/68229008)
+* proof school, http://www.sinovision.net/home/space/uid/163286/do/blog/id/272355.html
+* [AoPS——你值得拥有的数学武器库](http://k.sina.com.cn/article_6468992679_18194fea701900eq0t.html?cre=tianyi&mod=pcpager_focus&loc=13&r=9&rfunc=100&tj=none&tr=9)
+
  
 ## 20191031
 todo
