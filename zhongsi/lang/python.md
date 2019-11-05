@@ -34,4 +34,19 @@ for num, line in enumerate(lines):
 ```
 https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
 
+### container, iterable, iterator, generator and iteration tools: loop, list comprehension, map, filter, all
+* containers are data structures that holding elements and support membership tests, like list, str, tuple, dict, set
+* containers typically are iterable, many others are iterable as well, like file, socket (often for infinite source of data). 
+  an iterable is any object that can return an iterator by calling iter() function for the iterable object
+* iterator, a stateful helper object that will produce the next value when call next() function for it, it is a lazy value factory,
+  only next() call will produce next value
+* a generator is always an iterator, an elegent iterator, not like ordinary iterator object, which has init, next, iter methods,
+  a generator is a function, without return value, but has a "yield" statement, the call to the generator function will return a generator
+  then this generator could be used as an iterator
+* besides generator function, a generator can also be a generator expression, with syntax like:
+  (expression for item in list if condition)
+  just like a list comprehension
+* iteration tools such as loop, list comprehension, all, filter, map functions can work with these iterable objects
+* specifically, steam objects are better to dealt as an iterable object, a lazy data factory
 
+https://nvie.com/posts/iterators-vs-generators/
