@@ -406,6 +406,7 @@ site:ycombinator.com "per second"|achieving
 Storing 50M events per second in Elasticsearch (datadome.co)
 https://news.ycombinator.com/item?id=21327443
 site:zhihu.com 面试 系统设计
+https://www.hiredintech.com/classrooms/system-design/lesson/61
 https://www.zhihu.com/question/26312148
 https://www.zhihu.com/question/61594143
 https://zhuanlan.zhihu.com/p/26173608
