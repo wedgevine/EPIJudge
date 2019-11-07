@@ -50,3 +50,9 @@ https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
 * specifically, steam objects are better to dealt as an iterable object, a lazy data factory
 
 https://nvie.com/posts/iterators-vs-generators/
+
+### lambda
+https://realpython.com/python-lambda/
+
+### f function
+https://realpython.com/python-f-strings/
