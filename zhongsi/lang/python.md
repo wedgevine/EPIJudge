@@ -16,6 +16,9 @@ https://stackoverflow.com/questions/30081275/why-is-1000000000000000-in-range100
 range() is an object, which has a 'contain' method, which can calculate if a number is
 in the range, no need to scan through all numbers in the range
 
+### ternary
+<expression 1> if <condition> else <expression 2
+
 ### looping
 Loop over a single list with a regular for-in:
 ```
@@ -53,6 +56,31 @@ https://nvie.com/posts/iterators-vs-generators/
 
 ### lambda
 https://realpython.com/python-lambda/
+just amonymous function
 
-### f function
+### function
+#### all
+example, to check if an array a is palindromic:  
+```  
+return all(a[i] == a[-i] for i in range(len(a) // 2))
+```
+function all() takes a single parameter with iterable type, 
+the above generator expression is a generator, which
+is always an iterator and an iterator is always an iterable objec
+
+#### reduce
+import functools
+functools.reduce(
+    lambda x, ele: x + ele,
+    iterable,
+    init_value
+)
+like:
+x = init_value
+for ele in iterable:
+    x += ele
+
+#### f function
 https://realpython.com/python-f-strings/
+
+

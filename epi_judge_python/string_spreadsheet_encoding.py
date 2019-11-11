@@ -1,5 +1,5 @@
 from test_framework import generic_test
-
+import functools
 
 def first(col):
     A_index, size = ord('A') - 1, len(col)
@@ -10,8 +10,17 @@ def first(col):
 
     return iid
 
+# use reduce
+def second(col):
+    return functools.reduce(
+        lambda iid, c: iid * 26 + ord(c) - ord('A') + 1,
+        col,
+        0
+    )
+
 def ss_decode_col_id(col):
-    return first(col)
+    # return first(col)
+    return second(col)
 
 
 if __name__ == '__main__':

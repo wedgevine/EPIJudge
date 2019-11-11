@@ -1,4 +1,5 @@
 from test_framework import generic_test
+import functools
 
 def char_to_int(c):
     oc = ord(c)
@@ -34,8 +35,31 @@ def first(num_as_string, b1, b2):
 
     return ''.join(reversed(num_as_array))
 
+# use reduce
+def second(num_as_string, b1, b2):
+    def construct_from_base(num, base):
+        return ('' if num == 0 else 
+                construct_from_base(num // base, base) 
+                + 
+                int_to_char(num % base)) 
+
+    num, is_negative = 0, False 
+
+    if num_as_string[0] == '-':
+        num_as_string = num_as_string[1:]
+        is_negative = True
+
+    num = functools.reduce(
+        lambda x, c: x * b1 + char_to_int(c),
+        num_as_string,
+        0
+    )
+
+    return ('-' if is_negative  else '') + ('0' if num == 0 else construct_from_base(num, b2))
+
 def convert_base(num_as_string, b1, b2):
-    return first(num_as_string, b1, b2)
+    # return first(num_as_string, b1, b2)
+    return second(num_as_string, b1, b2)
 
 
 if __name__ == '__main__':

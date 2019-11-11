@@ -400,6 +400,8 @@ https://www.evernote.com/shard/s576/client/snv?noteGuid=+7e58b450-1abe-43a8-bf82
 九章 太阁 算法
 competitive programming https://cses.fi/book/
 leetcode 详解 https://hk029.gitbooks.io/leetbook/topic_include.html
+https://cntofu.com/book/186/index.html
+anki leetcode
 
 system design
 site:ycombinator.com "per second"|achieving
