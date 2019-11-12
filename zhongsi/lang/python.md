@@ -54,6 +54,19 @@ https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
 
 https://nvie.com/posts/iterators-vs-generators/
 
+#### itertools module
+* itertools.groupby(iterable, key=None), sort data first  
+  https://stackoverflow.com/questions/773/how-do-i-use-itertools-groupby
+  ```
+  groups = []
+  uniquekeys = []
+  data = sorted(data, key=keyfunc)
+  for k, g in groupby(data, keyfunc):
+      groups.append(list(g))      # Store group iterator as a list
+      uniquekeys.append(k)
+  ```
+
+
 ### lambda
 https://realpython.com/python-lambda/
 just amonymous function
