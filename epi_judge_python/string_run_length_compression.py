@@ -19,8 +19,24 @@ def decoding_first(s):
     # print('result: ', result)
     return ''.join(result)
 
+# true O(N) time complexity, using the same method as string to int algo
+def decoding_second(s):
+    size, result = len(s), []
+    index = 0
+
+    while index < size:
+        count = 0
+        while s[index].isdigit():
+            count = count * 10 + int(s[index])
+            index += 1
+        result.append(s[index] * count)        
+        index += 1
+
+    return ''.join(result)
+
 def decoding(s):
-    return decoding_first(s)
+    # return decoding_first(s)
+    return decoding_second(s)
 
 
 def encoding_first(s):
