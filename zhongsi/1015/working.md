@@ -1,3 +1,15 @@
+## 20191113
+counting and bijections
+* https://artofproblemsolving.com/wiki/index.php/Correspondence
+* http://yufeizhao.com/olympiad/bijections.pdf
+* https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/counting/tp9-1/
+* from mit 6.042 
+* https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/readings/
+* http://web.mit.edu/neboat/Public/6.042/counting1.pdf
+* http://faculty.marshall.usc.edu/Peng-Shi/math149/counting.pdf
+* https://www.cis.upenn.edu/~bhusnur4/cit592_fall2013/bijectionPrincipleHandout.pdf
+* https://www.imomath.com/index.php?options=237&lmm=1
+* https://www.imomath.com/index.php?options=238&lmm=1
 ## 20191102
 how to learn math
 1. 运算练习，概念，练习，计时，记结果
