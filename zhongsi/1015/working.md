@@ -1,3 +1,6 @@
+## 20191118
+venn diagram
+filetype:pdf venn diagram
 ## 20191113
 counting and bijections
 * https://artofproblemsolving.com/wiki/index.php/Correspondence
@@ -10,6 +13,13 @@ counting and bijections
 * https://www.cis.upenn.edu/~bhusnur4/cit592_fall2013/bijectionPrincipleHandout.pdf
 * https://www.imomath.com/index.php?options=237&lmm=1
 * https://www.imomath.com/index.php?options=238&lmm=1
+
+some math blogs
+* https://sem-amc-club.tk/
+* https://davidaltizio.web.illinois.edu/mathlinks.html
+* https://numbertheoryguy.com/home/blog/
+* https://solisinvicti.com/books/TheOlympiad/Books/
+
 ## 20191102
 how to learn math
 1. 运算练习，概念，练习，计时，记结果
