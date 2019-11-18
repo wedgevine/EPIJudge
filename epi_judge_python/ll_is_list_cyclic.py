@@ -4,10 +4,74 @@ from test_framework import generic_test
 from test_framework.test_failure import TestFailure
 from test_framework.test_utils import enable_executor_hook
 
+def get_cycle_length(head):
+    try:
+        slow = head.next
+        fast = slow.next
+
+        while slow is not fast:
+            slow = slow.next
+            fast = fast.next.next
+
+        step = 1
+        slow = slow.next
+        fast = fast.next.next
+        while slow is not fast:
+            slow = slow.next
+            fast = fast.next.next
+            step += 1
+
+        return step
+    except AttributeError:
+        return 0
+
+def first(head):
+    c = get_cycle_length(head)
+
+    if c == 0:
+        return None
+
+    slow = fast = head
+    for _ in range(c):
+        fast = fast.next
+
+    while slow is not fast:
+        slow = slow.next
+        fast = fast.next
+
+    return slow
+
+def second(head):
+    def cycle_len(end):
+        start = end
+        step = 0
+
+        while True:
+            start = start.next
+            step += 1
+            if start is end:
+                return step
+
+    slow = fast = head
+    while fast and fast.next and fast.next.next:
+        slow = slow.next
+        fast = fast.next.next
+        if slow is fast:
+            cl = cycle_len(slow)
+            slow = fast = head
+            for _ in range(cl):
+                fast = fast.next
+            while True:
+                if slow is fast:
+                    return slow
+                slow = slow.next
+                fast = fast.next
+
+    return None
 
 def has_cycle(head):
-    # TODO - you fill in here.
-    return None
+    return first(head)
+    # return second(head)
 
 
 @enable_executor_hook
