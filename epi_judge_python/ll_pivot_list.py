@@ -4,10 +4,38 @@ from test_framework import generic_test
 from test_framework.test_failure import TestFailure
 from test_framework.test_utils import enable_executor_hook
 
+from list_node import ListNode
+
+def first(l, x):
+    front_head, middle_head, rear_head = ListNode(0), ListNode(0), ListNode(0)
+    front_tail, middle_tail, rear_tail = front_head, middle_head, rear_head
+
+    while l:
+        if l.data < x:
+            front_tail.next = l
+            front_tail = front_tail.next
+        elif l.data == x:
+            middle_tail.next = l
+            middle_tail = middle_tail.next
+        else:
+            rear_tail.next = l
+            rear_tail = rear_tail.next
+        l = l.next
+    rear_tail.next = None
+    middle_tail.next = rear_head.next
+    front_tail.next = middle_head.next
+    # if middle_head.next:
+    #     front_tail.next = middle_head.next
+    #     front_tail = middle_tail
+    # if rear_head.next:
+    #     front_tail.next = rear_head.next
+    #     front_tail = rear_tail
+    # front_tail.next = None 
+
+    return front_head.next
 
 def list_pivoting(l, x):
-    # TODO - you fill in here.
-    return None
+    return first(l, x)
 
 
 def linked_to_list(l):
