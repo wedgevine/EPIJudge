@@ -54,6 +54,13 @@ https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
 
 https://nvie.com/posts/iterators-vs-generators/
 
+### collections
+#### namedtuple
+```
+from collections import namedtuple
+Point = namedtuple('Point', ['x', 'y'])
+```
+
 #### itertools module
 * itertools.groupby(iterable, key=None), sort data first  
   https://stackoverflow.com/questions/773/how-do-i-use-itertools-groupby
@@ -96,4 +103,13 @@ for ele in iterable:
 #### f function
 https://realpython.com/python-f-strings/
 
+### class
+```
+class Dog:
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []
 
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+```
