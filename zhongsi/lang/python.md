@@ -113,3 +113,9 @@ class Dog:
     def add_trick(self, trick):
         self.tricks.append(trick)
 ```
+to make sure two variables are referring to the same object, using "is", for reference equality testing
+```
+f1 = Foo()
+f2 = Foo()
+print f1 is f2
+```
