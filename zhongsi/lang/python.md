@@ -19,6 +19,10 @@ in the range, no need to scan through all numbers in the range
 ### ternary
 <expression 1> if <condition> else <expression 2
 
+### format function
+```
+print('value1 {}, value2 {}'.format(value1, value2))
+```
 ### looping
 Loop over a single list with a regular for-in:
 ```
