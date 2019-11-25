@@ -54,6 +54,12 @@ https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
 
 https://nvie.com/posts/iterators-vs-generators/
 
+* PEP 8 style guide for For sequences, (strings, lists, tuples), use the fact that empty sequences are false.
+```
+if not seq:
+if seq:
+```
+
 ### collections
 #### namedtuple
 ```
