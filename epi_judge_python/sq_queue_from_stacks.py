@@ -1,15 +1,41 @@
 from test_framework import generic_test
 
-
 class Queue:
+    def __init__(self):
+        self._enque, self._deque = [], []
+
     def enqueue(self, x):
-        # TODO - you fill in here.
-        return
+        self._enque.append(x)
 
     def dequeue(self):
-        # TODO - you fill in here.
-        return 0
+        if not self._deque:
+            while self._enque:
+                self._deque.append(self._enque.pop())
+        
+        if not self._deque:
+            raise IndexError('dequeue: empty queue')
+        
+        return self._deque.pop()
 
+class Queue1:
+    def __init__(self):
+        self._enque = []
+        self._deque = []
+
+    def enqueue(self, x):
+        self._enque.append(x)
+
+    def dequeue(self):
+        self._deque.clear()
+        while self._enque:
+            self._deque.append(self._enque.pop())
+        if self._deque:
+            v = self._deque.pop()
+            while self._deque:
+                self._enque.append(self._deque.pop())
+            return v
+
+        raise IndexError('dequeue: empty queue')
 
 def queue_tester(ops):
     from test_framework.test_failure import TestFailure
