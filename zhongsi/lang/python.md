@@ -66,10 +66,17 @@ if seq:
 
 ### collections
 #### namedtuple
+https://dbader.org/blog/writing-clean-python-with-namedtuples  
+*A good way to view them is to think that namedtuples are a 
+memory-efficient shortcut to defining an immutable class in 
+Python manually.*
 ```
 from collections import namedtuple
 Point = namedtuple('Point', ['x', 'y'])
 ```
+https://stackoverflow.com/questions/40632750/whats-the-difference-between-enum-and-namedtuple
+mentioned the benefits of namedtuple, which is used for many objects with same type. object
+attributes can be accessed by name, instead of by index. point.x, vs point[0] 
 
 #### itertools module
 * itertools.groupby(iterable, key=None), sort data first  
