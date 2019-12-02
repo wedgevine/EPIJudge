@@ -62,6 +62,25 @@ class Solution:
         
         return result
 
+    # other's iterative
+    def second2(self, root):
+        if not root:
+            return []
+
+        result = []
+        candidates = []
+        current = root
+
+        while current or candidates:
+            if current:
+                candidates.append(current)
+                current = current.left
+            else:
+                current = candidates.pop()
+                current = current.right
+
+        return result
+
     # recursive
     def first(self, root):
         if not root:

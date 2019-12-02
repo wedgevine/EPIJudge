@@ -78,6 +78,13 @@ https://stackoverflow.com/questions/40632750/whats-the-difference-between-enum-a
 mentioned the benefits of namedtuple, which is used for many objects with same type. object
 attributes can be accessed by name, instead of by index. point.x, vs point[0] 
 
+#### deque
+a generalization of stack and queue, deque, double-ended queue, support append/pop for either side of the deque with O(1) performance.  
+* append() add to right side
+* pop() remove from right side
+* appendleft() add to the left side
+* popleft() remove from left side
+
 #### itertools module
 * itertools.groupby(iterable, key=None), sort data first  
   https://stackoverflow.com/questions/773/how-do-i-use-itertools-groupby

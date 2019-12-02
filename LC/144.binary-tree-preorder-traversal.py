@@ -77,6 +77,26 @@ class Solution:
 
         return result
 
+    # other's iterative
+    def second2(self, root):
+        if not root:
+            return []
+
+        result = []
+        candidates = []
+        current = root
+
+        while current or candidates:
+            if current:
+                result.append(current.val)
+                candidates.append(current)
+                current = current.left
+            else:
+                current = candidates.pop()
+                current = current.right
+
+        return result
+
     # recursive
     def first(self, root):
         result = []
@@ -88,8 +108,9 @@ class Solution:
 
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         # return self.first(root)
-        # return self.second(root)
-        return self.third(root)
+        return self.second(root)
+        # return self.second2(root)
+        # return self.third(root)
         
 # @lc code=end
 
