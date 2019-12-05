@@ -1,3 +1,11 @@
+## 20191205
+python namedtuple, modification, recordtype, attr, vs dict
+https://stackoverflow.com/questions/9872255/when-and-why-should-i-use-a-namedtuple-instead-of-a-dictionary
+https://news.ycombinator.com/item?id=15132670
+https://stackoverflow.com/questions/42618134/updating-the-values-of-variables-inside-a-namedtuple-structure?noredirect=1&lq=1
+https://stackoverflow.com/questions/31252939/changing-values-of-a-list-of-namedtuples/31253184
+https://stackoverflow.com/questions/26676127/use-replace-method-of-namedtuple-to-update-the-fields-of-other-data-structures
+
 ## 20191118
 venn diagram
 filetype:pdf venn diagram

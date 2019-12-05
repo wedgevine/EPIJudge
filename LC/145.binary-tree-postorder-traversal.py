@@ -34,6 +34,8 @@
 
 # @lc code=start
 # Definition for a binary tree node.
+from collections import namedtuple
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -64,6 +66,8 @@ class Solution:
 
     # other's iterative
     def second2(self, root):
+        TreeNodeVisit = namedtuple('TreeNodeVisit', ('node', 'visited'))
+
         if not root:
             return []
 
@@ -73,11 +77,15 @@ class Solution:
 
         while current or candidates:
             if current:
-                candidates.append(current)
+                candidates.append(TreeNodeVisit(current, False))
                 current = current.left
             else:
-                current = candidates.pop()
-                current = current.right
+                candidate = candidates.pop()
+                if candidate.visited:
+                    result.append(candidate.node.val)
+                else:
+                    candidates.append(TreeNodeVisit(candidate.node, True))
+                    current = candidate.node.right
 
         return result
 
@@ -90,6 +98,7 @@ class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         # return self.first(root)
         return self.second(root)
+        # return self.second2(root)
 
 # @lc code=end
 
